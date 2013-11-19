@@ -1,0 +1,528 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		27897D021831E6F50070281C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D011831E6F50070281C /* Foundation.framework */; };
+		27897D041831E6F50070281C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D031831E6F50070281C /* CoreGraphics.framework */; };
+		27897D061831E6F50070281C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D051831E6F50070281C /* UIKit.framework */; };
+		27897D0C1831E6F50070281C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27897D0A1831E6F50070281C /* InfoPlist.strings */; };
+		27897D0E1831E6F50070281C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D0D1831E6F50070281C /* main.m */; };
+		27897D121831E6F50070281C /* HelloWorldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D111831E6F50070281C /* HelloWorldAppDelegate.m */; };
+		27897D151831E6F50070281C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27897D131831E6F50070281C /* Main.storyboard */; };
+		27897D181831E6F50070281C /* HelloWorldViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D171831E6F50070281C /* HelloWorldViewController.mm */; };
+		27897D1A1831E6F50070281C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27897D191831E6F50070281C /* Images.xcassets */; };
+		27897D211831E6F50070281C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D201831E6F50070281C /* XCTest.framework */; };
+		27897D221831E6F50070281C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D011831E6F50070281C /* Foundation.framework */; };
+		27897D231831E6F50070281C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D051831E6F50070281C /* UIKit.framework */; };
+		27897D2B1831E6F50070281C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27897D291831E6F50070281C /* InfoPlist.strings */; };
+		27897D2D1831E6F50070281C /* MidiMasherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D2C1831E6F50070281C /* MidiMasherTests.m */; };
+		27897D501831E8DD0070281C /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D4B1831E8DD0070281C /* PGMidi.mm */; };
+		27897D511831E8DD0070281C /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D4D1831E8DD0070281C /* PGMidiAllSources.mm */; };
+		27897D521831E8DD0070281C /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D4F1831E8DD0070281C /* PGMidiFind.mm */; };
+		27897D551831EA500070281C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D541831EA500070281C /* CoreMIDI.framework */; };
+		278CBBE5183AB4310018FA65 /* NetworkMidi.iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 278CBBE4183AB4310018FA65 /* NetworkMidi.iOS.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		27897D241831E6F50070281C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 27897CF61831E6F50070281C /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 27897CFD1831E6F50070281C;
+			remoteInfo = MidiMasher;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		27897CFE1831E6F50070281C /* MidiMasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiMasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		27897D011831E6F50070281C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		27897D031831E6F50070281C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		27897D051831E6F50070281C /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		27897D091831E6F50070281C /* MidiMasher-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MidiMasher-Info.plist"; sourceTree = "<group>"; };
+		27897D0B1831E6F50070281C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27897D0D1831E6F50070281C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		27897D0F1831E6F50070281C /* MidiMasher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MidiMasher-Prefix.pch"; sourceTree = "<group>"; };
+		27897D101831E6F50070281C /* HelloWorldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldAppDelegate.h; sourceTree = "<group>"; };
+		27897D111831E6F50070281C /* HelloWorldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldAppDelegate.m; sourceTree = "<group>"; };
+		27897D141831E6F50070281C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		27897D161831E6F50070281C /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
+		27897D171831E6F50070281C /* HelloWorldViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = HelloWorldViewController.mm; sourceTree = "<group>"; };
+		27897D191831E6F50070281C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		27897D1F1831E6F50070281C /* MidiMasherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidiMasherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		27897D201831E6F50070281C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		27897D281831E6F50070281C /* MidiMasherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MidiMasherTests-Info.plist"; sourceTree = "<group>"; };
+		27897D2A1831E6F50070281C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		27897D2C1831E6F50070281C /* MidiMasherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiMasherTests.m; sourceTree = "<group>"; };
+		27897D481831E8DD0070281C /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
+		27897D491831E8DD0070281C /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		27897D4A1831E8DD0070281C /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		27897D4B1831E8DD0070281C /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		27897D4C1831E8DD0070281C /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		27897D4D1831E8DD0070281C /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		27897D4E1831E8DD0070281C /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		27897D4F1831E8DD0070281C /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
+		27897D541831EA500070281C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
+		278CBBE3183AAF0A0018FA65 /* NetworkMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMidi.h; sourceTree = "<group>"; };
+		278CBBE4183AB4310018FA65 /* NetworkMidi.iOS.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NetworkMidi.iOS.mm; sourceTree = "<group>"; };
+		278CBBEA183B299A0018FA65 /* SoundDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDef.h; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		27897CFB1831E6F50070281C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27897D551831EA500070281C /* CoreMIDI.framework in Frameworks */,
+				27897D041831E6F50070281C /* CoreGraphics.framework in Frameworks */,
+				27897D061831E6F50070281C /* UIKit.framework in Frameworks */,
+				27897D021831E6F50070281C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27897D1C1831E6F50070281C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27897D211831E6F50070281C /* XCTest.framework in Frameworks */,
+				27897D231831E6F50070281C /* UIKit.framework in Frameworks */,
+				27897D221831E6F50070281C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27897CF51831E6F50070281C = {
+			isa = PBXGroup;
+			children = (
+				27897D461831E8DD0070281C /* lib */,
+				27897D071831E6F50070281C /* MidiMasher */,
+				27897D261831E6F50070281C /* MidiMasherTests */,
+				27897D001831E6F50070281C /* Frameworks */,
+				27897CFF1831E6F50070281C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		27897CFF1831E6F50070281C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27897CFE1831E6F50070281C /* MidiMasher.app */,
+				27897D1F1831E6F50070281C /* MidiMasherTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		27897D001831E6F50070281C /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				27897D541831EA500070281C /* CoreMIDI.framework */,
+				27897D011831E6F50070281C /* Foundation.framework */,
+				27897D031831E6F50070281C /* CoreGraphics.framework */,
+				27897D051831E6F50070281C /* UIKit.framework */,
+				27897D201831E6F50070281C /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		27897D071831E6F50070281C /* MidiMasher */ = {
+			isa = PBXGroup;
+			children = (
+				27897D101831E6F50070281C /* HelloWorldAppDelegate.h */,
+				27897D111831E6F50070281C /* HelloWorldAppDelegate.m */,
+				27897D131831E6F50070281C /* Main.storyboard */,
+				27897D161831E6F50070281C /* HelloWorldViewController.h */,
+				27897D171831E6F50070281C /* HelloWorldViewController.mm */,
+				27897D191831E6F50070281C /* Images.xcassets */,
+				27897D081831E6F50070281C /* Supporting Files */,
+				278CBBE3183AAF0A0018FA65 /* NetworkMidi.h */,
+				278CBBE4183AB4310018FA65 /* NetworkMidi.iOS.mm */,
+				278CBBEA183B299A0018FA65 /* SoundDef.h */,
+			);
+			path = MidiMasher;
+			sourceTree = "<group>";
+		};
+		27897D081831E6F50070281C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27897D091831E6F50070281C /* MidiMasher-Info.plist */,
+				27897D0A1831E6F50070281C /* InfoPlist.strings */,
+				27897D0D1831E6F50070281C /* main.m */,
+				27897D0F1831E6F50070281C /* MidiMasher-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27897D261831E6F50070281C /* MidiMasherTests */ = {
+			isa = PBXGroup;
+			children = (
+				27897D2C1831E6F50070281C /* MidiMasherTests.m */,
+				27897D271831E6F50070281C /* Supporting Files */,
+			);
+			path = MidiMasherTests;
+			sourceTree = "<group>";
+		};
+		27897D271831E6F50070281C /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				27897D281831E6F50070281C /* MidiMasherTests-Info.plist */,
+				27897D291831E6F50070281C /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		27897D461831E8DD0070281C /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				27897D471831E8DD0070281C /* PGMidi */,
+			);
+			path = lib;
+			sourceTree = "<group>";
+		};
+		27897D471831E8DD0070281C /* PGMidi */ = {
+			isa = PBXGroup;
+			children = (
+				27897D481831E8DD0070281C /* iOSVersionDetection.h */,
+				27897D491831E8DD0070281C /* PGArc.h */,
+				27897D4A1831E8DD0070281C /* PGMidi.h */,
+				27897D4B1831E8DD0070281C /* PGMidi.mm */,
+				27897D4C1831E8DD0070281C /* PGMidiAllSources.h */,
+				27897D4D1831E8DD0070281C /* PGMidiAllSources.mm */,
+				27897D4E1831E8DD0070281C /* PGMidiFind.h */,
+				27897D4F1831E8DD0070281C /* PGMidiFind.mm */,
+			);
+			path = PGMidi;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		27897CFD1831E6F50070281C /* MidiMasher */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27897D301831E6F50070281C /* Build configuration list for PBXNativeTarget "MidiMasher" */;
+			buildPhases = (
+				27897CFA1831E6F50070281C /* Sources */,
+				27897CFB1831E6F50070281C /* Frameworks */,
+				27897CFC1831E6F50070281C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MidiMasher;
+			productName = MidiMasher;
+			productReference = 27897CFE1831E6F50070281C /* MidiMasher.app */;
+			productType = "com.apple.product-type.application";
+		};
+		27897D1E1831E6F50070281C /* MidiMasherTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 27897D331831E6F50070281C /* Build configuration list for PBXNativeTarget "MidiMasherTests" */;
+			buildPhases = (
+				27897D1B1831E6F50070281C /* Sources */,
+				27897D1C1831E6F50070281C /* Frameworks */,
+				27897D1D1831E6F50070281C /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				27897D251831E6F50070281C /* PBXTargetDependency */,
+			);
+			name = MidiMasherTests;
+			productName = MidiMasherTests;
+			productReference = 27897D1F1831E6F50070281C /* MidiMasherTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		27897CF61831E6F50070281C /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = HelloWorld;
+				LastUpgradeCheck = 0500;
+				ORGANIZATIONNAME = Mike;
+				TargetAttributes = {
+					27897D1E1831E6F50070281C = {
+						TestTargetID = 27897CFD1831E6F50070281C;
+					};
+				};
+			};
+			buildConfigurationList = 27897CF91831E6F50070281C /* Build configuration list for PBXProject "MidiMasher" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 27897CF51831E6F50070281C;
+			productRefGroup = 27897CFF1831E6F50070281C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				27897CFD1831E6F50070281C /* MidiMasher */,
+				27897D1E1831E6F50070281C /* MidiMasherTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		27897CFC1831E6F50070281C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27897D1A1831E6F50070281C /* Images.xcassets in Resources */,
+				27897D0C1831E6F50070281C /* InfoPlist.strings in Resources */,
+				27897D151831E6F50070281C /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27897D1D1831E6F50070281C /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27897D2B1831E6F50070281C /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		27897CFA1831E6F50070281C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27897D121831E6F50070281C /* HelloWorldAppDelegate.m in Sources */,
+				27897D511831E8DD0070281C /* PGMidiAllSources.mm in Sources */,
+				27897D521831E8DD0070281C /* PGMidiFind.mm in Sources */,
+				27897D181831E6F50070281C /* HelloWorldViewController.mm in Sources */,
+				27897D0E1831E6F50070281C /* main.m in Sources */,
+				27897D501831E8DD0070281C /* PGMidi.mm in Sources */,
+				278CBBE5183AB4310018FA65 /* NetworkMidi.iOS.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		27897D1B1831E6F50070281C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				27897D2D1831E6F50070281C /* MidiMasherTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		27897D251831E6F50070281C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 27897CFD1831E6F50070281C /* MidiMasher */;
+			targetProxy = 27897D241831E6F50070281C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		27897D0A1831E6F50070281C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27897D0B1831E6F50070281C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		27897D131831E6F50070281C /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27897D141831E6F50070281C /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		27897D291831E6F50070281C /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27897D2A1831E6F50070281C /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		27897D2E1831E6F50070281C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		27897D2F1831E6F50070281C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		27897D311831E6F50070281C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MidiMasher/MidiMasher-Prefix.pch";
+				INFOPLIST_FILE = "MidiMasher/MidiMasher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		27897D321831E6F50070281C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MidiMasher/MidiMasher-Prefix.pch";
+				INFOPLIST_FILE = "MidiMasher/MidiMasher-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		27897D341831E6F50070281C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MidiMasher.app/MidiMasher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MidiMasher/MidiMasher-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "MidiMasherTests/MidiMasherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		27897D351831E6F50070281C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_INCLUDING_64_BIT)";
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MidiMasher.app/MidiMasher";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MidiMasher/MidiMasher-Prefix.pch";
+				INFOPLIST_FILE = "MidiMasherTests/MidiMasherTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		27897CF91831E6F50070281C /* Build configuration list for PBXProject "MidiMasher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27897D2E1831E6F50070281C /* Debug */,
+				27897D2F1831E6F50070281C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27897D301831E6F50070281C /* Build configuration list for PBXNativeTarget "MidiMasher" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27897D311831E6F50070281C /* Debug */,
+				27897D321831E6F50070281C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		27897D331831E6F50070281C /* Build configuration list for PBXNativeTarget "MidiMasherTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				27897D341831E6F50070281C /* Debug */,
+				27897D351831E6F50070281C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 27897CF61831E6F50070281C /* Project object */;
+}
