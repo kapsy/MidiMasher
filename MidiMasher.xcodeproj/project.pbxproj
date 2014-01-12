@@ -21,11 +21,11 @@
 		27897D231831E6F50070281C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D051831E6F50070281C /* UIKit.framework */; };
 		27897D2B1831E6F50070281C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27897D291831E6F50070281C /* InfoPlist.strings */; };
 		27897D2D1831E6F50070281C /* MidiMasherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D2C1831E6F50070281C /* MidiMasherTests.m */; };
-		27897D501831E8DD0070281C /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D4B1831E8DD0070281C /* PGMidi.mm */; };
-		27897D511831E8DD0070281C /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D4D1831E8DD0070281C /* PGMidiAllSources.mm */; };
-		27897D521831E8DD0070281C /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D4F1831E8DD0070281C /* PGMidiFind.mm */; };
 		27897D551831EA500070281C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D541831EA500070281C /* CoreMIDI.framework */; };
 		278CBBE5183AB4310018FA65 /* NetworkMidi.iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 278CBBE4183AB4310018FA65 /* NetworkMidi.iOS.mm */; };
+		27DCF30B183C8645007D3E22 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27DCF306183C8645007D3E22 /* PGMidi.mm */; };
+		27DCF30C183C8645007D3E22 /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27DCF308183C8645007D3E22 /* PGMidiAllSources.mm */; };
+		27DCF30D183C8645007D3E22 /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27DCF30A183C8645007D3E22 /* PGMidiFind.mm */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -58,18 +58,18 @@
 		27897D281831E6F50070281C /* MidiMasherTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MidiMasherTests-Info.plist"; sourceTree = "<group>"; };
 		27897D2A1831E6F50070281C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27897D2C1831E6F50070281C /* MidiMasherTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiMasherTests.m; sourceTree = "<group>"; };
-		27897D481831E8DD0070281C /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
-		27897D491831E8DD0070281C /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
-		27897D4A1831E8DD0070281C /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
-		27897D4B1831E8DD0070281C /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
-		27897D4C1831E8DD0070281C /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
-		27897D4D1831E8DD0070281C /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
-		27897D4E1831E8DD0070281C /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
-		27897D4F1831E8DD0070281C /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
 		27897D541831EA500070281C /* CoreMIDI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreMIDI.framework; path = System/Library/Frameworks/CoreMIDI.framework; sourceTree = SDKROOT; };
 		278CBBE3183AAF0A0018FA65 /* NetworkMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMidi.h; sourceTree = "<group>"; };
 		278CBBE4183AB4310018FA65 /* NetworkMidi.iOS.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NetworkMidi.iOS.mm; sourceTree = "<group>"; };
 		278CBBEA183B299A0018FA65 /* SoundDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDef.h; sourceTree = "<group>"; };
+		27DCF303183C8645007D3E22 /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
+		27DCF304183C8645007D3E22 /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
+		27DCF305183C8645007D3E22 /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
+		27DCF306183C8645007D3E22 /* PGMidi.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidi.mm; sourceTree = "<group>"; };
+		27DCF307183C8645007D3E22 /* PGMidiAllSources.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiAllSources.h; sourceTree = "<group>"; };
+		27DCF308183C8645007D3E22 /* PGMidiAllSources.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiAllSources.mm; sourceTree = "<group>"; };
+		27DCF309183C8645007D3E22 /* PGMidiFind.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidiFind.h; sourceTree = "<group>"; };
+		27DCF30A183C8645007D3E22 /* PGMidiFind.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = PGMidiFind.mm; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,22 +178,22 @@
 		27897D461831E8DD0070281C /* lib */ = {
 			isa = PBXGroup;
 			children = (
-				27897D471831E8DD0070281C /* PGMidi */,
+				27DCF302183C8645007D3E22 /* PGMidi */,
 			);
 			path = lib;
 			sourceTree = "<group>";
 		};
-		27897D471831E8DD0070281C /* PGMidi */ = {
+		27DCF302183C8645007D3E22 /* PGMidi */ = {
 			isa = PBXGroup;
 			children = (
-				27897D481831E8DD0070281C /* iOSVersionDetection.h */,
-				27897D491831E8DD0070281C /* PGArc.h */,
-				27897D4A1831E8DD0070281C /* PGMidi.h */,
-				27897D4B1831E8DD0070281C /* PGMidi.mm */,
-				27897D4C1831E8DD0070281C /* PGMidiAllSources.h */,
-				27897D4D1831E8DD0070281C /* PGMidiAllSources.mm */,
-				27897D4E1831E8DD0070281C /* PGMidiFind.h */,
-				27897D4F1831E8DD0070281C /* PGMidiFind.mm */,
+				27DCF303183C8645007D3E22 /* iOSVersionDetection.h */,
+				27DCF304183C8645007D3E22 /* PGArc.h */,
+				27DCF305183C8645007D3E22 /* PGMidi.h */,
+				27DCF306183C8645007D3E22 /* PGMidi.mm */,
+				27DCF307183C8645007D3E22 /* PGMidiAllSources.h */,
+				27DCF308183C8645007D3E22 /* PGMidiAllSources.mm */,
+				27DCF309183C8645007D3E22 /* PGMidiFind.h */,
+				27DCF30A183C8645007D3E22 /* PGMidiFind.mm */,
 			);
 			path = PGMidi;
 			sourceTree = "<group>";
@@ -297,11 +297,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				27897D121831E6F50070281C /* HelloWorldAppDelegate.m in Sources */,
-				27897D511831E8DD0070281C /* PGMidiAllSources.mm in Sources */,
-				27897D521831E8DD0070281C /* PGMidiFind.mm in Sources */,
 				27897D181831E6F50070281C /* HelloWorldViewController.mm in Sources */,
 				27897D0E1831E6F50070281C /* main.m in Sources */,
-				27897D501831E8DD0070281C /* PGMidi.mm in Sources */,
+				27DCF30B183C8645007D3E22 /* PGMidi.mm in Sources */,
+				27DCF30D183C8645007D3E22 /* PGMidiFind.mm in Sources */,
+				27DCF30C183C8645007D3E22 /* PGMidiAllSources.mm in Sources */,
 				278CBBE5183AB4310018FA65 /* NetworkMidi.iOS.mm in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

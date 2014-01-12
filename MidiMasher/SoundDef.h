@@ -30,6 +30,7 @@ namespace hd
             
             // BOOL isPitchable;
             //BOOL isPannable;
+            BOOL isLooping; // そうではないと一発な音
             
             
             // values that shour be able to be defined in game (using lua)
@@ -40,6 +41,9 @@ namespace hd
             float mixGain; // default is 1.0, used for final mix adjustments
             float gainRange; // 0-1, a percentage of the mixGain;
             float volGain; // where vol changes are set final vol = (mixGain - gainRange) + (gainRange * volGain)
+            
+            
+            
             
             // data stuff
             unsigned short* bufferHeader;
