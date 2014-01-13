@@ -11,14 +11,6 @@
 #pragma mark -
 #pragma mark Singleton Functions
 
-//static NSObject * lock = [[NSObject alloc] init];
-////static CDSoundEngine * soundEngine = nil;
-////static CDAudioManager * am = nil;
-////static CDBufferManager * bufferManager = nil;
-//static bool m_mute;
-//static bool m_enabled;
-
-
 static PGMidi * midi = nil;
 
 void hd::sound::NetworkMidi::InitNetworkMidi(){

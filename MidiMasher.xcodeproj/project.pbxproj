@@ -132,6 +132,7 @@
 		27897D071831E6F50070281C /* MidiMasher */ = {
 			isa = PBXGroup;
 			children = (
+				27E4AE441883B0C50042EF8F /* iPad */,
 				27897D101831E6F50070281C /* HelloWorldAppDelegate.h */,
 				27897D111831E6F50070281C /* HelloWorldAppDelegate.m */,
 				27897D131831E6F50070281C /* Main.storyboard */,
@@ -196,6 +197,13 @@
 				27DCF30A183C8645007D3E22 /* PGMidiFind.mm */,
 			);
 			path = PGMidi;
+			sourceTree = "<group>";
+		};
+		27E4AE441883B0C50042EF8F /* iPad */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = iPad;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -432,7 +440,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MidiMasher/MidiMasher-Prefix.pch";
 				INFOPLIST_FILE = "MidiMasher/MidiMasher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -445,7 +455,9 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "MidiMasher/MidiMasher-Prefix.pch";
 				INFOPLIST_FILE = "MidiMasher/MidiMasher-Info.plist";
+				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = "1,2";
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
