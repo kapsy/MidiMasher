@@ -9,7 +9,21 @@
 #import <UIKit/UIKit.h>
 
 @interface MidiMasherViewController : UIViewController {
+//     UIColor* white;
+//     UIColor* gray;
+//     UIColor* pressed;
+//
+    NSArray* nums;
+    NSArray* keys;
+
 }
+
+ - (void)init_keys;
+
+@property (nonatomic, retain) UIColor* white_off;
+@property (nonatomic, retain) UIColor* white_on;
+@property (nonatomic, retain) UIColor* black_off;
+@property (nonatomic, retain) UIColor* black_on;
 
 @property (weak, nonatomic) IBOutlet UIButton *key_001;
 @property (weak, nonatomic) IBOutlet UIButton *key_002;
