@@ -21,10 +21,10 @@ void hd::sound::NetworkMidi::SendNoteOn(unsigned int note)
 {
     NSLog(@"midiSendNoteOn: %d", note);
     
-    // notOff is sent intially to kill any hanging notes
-    // const UInt8 noteOff[]  = { 0x80, static_cast<UInt8>(note), 127 };
+    // noteOff is sent intially to kill any hanging notes
+    const UInt8 noteOff[]  = { 0x80, static_cast<UInt8>(note), 127 };
     const UInt8 noteOn[]  = { 0x90, static_cast<UInt8>(note), 127 };
-    // [midi sendBytes:noteOff size:sizeof(noteOff)];
+    [midi sendBytes:noteOff size:sizeof(noteOff)];
     [midi sendBytes:noteOn size:sizeof(noteOn)];
 }
 
