@@ -11,11 +11,15 @@
 @interface MidiMasherViewController : UIViewController {
 }
 
-@property (weak, nonatomic) IBOutlet UIButton *key_01_C;
+@property (weak, nonatomic) IBOutlet UIButton *key_001;
+@property (weak, nonatomic) IBOutlet UIButton *key_002;
 
 - (IBAction)key_001_touchDown:(id)sender;
 - (IBAction)key_001_touchUpInside:(id)sender;
+- (IBAction)key_001_touchUpOutside:(id)sender;
+
 - (IBAction)key_002_touchDown:(id)sender;
 - (IBAction)key_002_touchUpInside:(id)sender;
+- (IBAction)key_002_touchUpOutside:(id)sender;
 
 @end
