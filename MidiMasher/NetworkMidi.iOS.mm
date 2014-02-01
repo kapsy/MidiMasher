@@ -19,17 +19,20 @@ void hd::sound::NetworkMidi::InitNetworkMidi(){
 
 void hd::sound::NetworkMidi::SendNoteOn(unsigned int note)
 {
-    //    const UInt8 note      = note;
+    NSLog(@"midiSendNoteOn: %d", note);
+    
+    // notOff is sent intially to kill any hanging notes
+    // const UInt8 noteOff[]  = { 0x80, static_cast<UInt8>(note), 127 };
     const UInt8 noteOn[]  = { 0x90, static_cast<UInt8>(note), 127 };
-    NSLog(@"midiSendNoteOn");
+    // [midi sendBytes:noteOff size:sizeof(noteOff)];
     [midi sendBytes:noteOn size:sizeof(noteOn)];
 }
 
 void hd::sound::NetworkMidi::SendNoteOff(unsigned int note)
 {
-    //    const UInt8 note      = note;
+    NSLog(@"midiSendNoteOff: %d", note);
+
     const UInt8 noteOff[]  = { 0x80, static_cast<UInt8>(note), 127 };
-    NSLog(@"midiSendNoteOff");
     [midi sendBytes:noteOff size:sizeof(noteOff)];
 }
 
