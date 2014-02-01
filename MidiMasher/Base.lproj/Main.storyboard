@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3746"/>
     </dependencies>
     <scenes>
-        <!--Hello World View Controller-->
+        <!--MidiMasher View Controller-->
         <scene sceneID="ufC-wZ-h7g">
             <objects>
-                <viewController id="vXZ-lx-hvc" customClass="HelloWorldViewController" sceneMemberID="viewController">
+                <viewController id="vXZ-lx-hvc" customClass="MidiMasherViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="DQy-1y-YFA"/>
                         <viewControllerLayoutGuide type="bottom" id="jtv-zx-MYl"/>
