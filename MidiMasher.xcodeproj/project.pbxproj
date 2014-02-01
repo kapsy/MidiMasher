@@ -12,9 +12,8 @@
 		27897D061831E6F50070281C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D051831E6F50070281C /* UIKit.framework */; };
 		27897D0C1831E6F50070281C /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27897D0A1831E6F50070281C /* InfoPlist.strings */; };
 		27897D0E1831E6F50070281C /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D0D1831E6F50070281C /* main.m */; };
-		27897D121831E6F50070281C /* HelloWorldAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D111831E6F50070281C /* HelloWorldAppDelegate.m */; };
+		27897D121831E6F50070281C /* MidiMasherAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D111831E6F50070281C /* MidiMasherAppDelegate.m */; };
 		27897D151831E6F50070281C /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 27897D131831E6F50070281C /* Main.storyboard */; };
-		27897D181831E6F50070281C /* HelloWorldViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27897D171831E6F50070281C /* HelloWorldViewController.mm */; };
 		27897D1A1831E6F50070281C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 27897D191831E6F50070281C /* Images.xcassets */; };
 		27897D211831E6F50070281C /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D201831E6F50070281C /* XCTest.framework */; };
 		27897D221831E6F50070281C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D011831E6F50070281C /* Foundation.framework */; };
@@ -23,6 +22,7 @@
 		27897D2D1831E6F50070281C /* MidiMasherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 27897D2C1831E6F50070281C /* MidiMasherTests.m */; };
 		27897D551831EA500070281C /* CoreMIDI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D541831EA500070281C /* CoreMIDI.framework */; };
 		278CBBE5183AB4310018FA65 /* NetworkMidi.iOS.mm in Sources */ = {isa = PBXBuildFile; fileRef = 278CBBE4183AB4310018FA65 /* NetworkMidi.iOS.mm */; };
+		27C2592A189C6B8C001DE810 /* MidiMasherViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27C25928189C6B8C001DE810 /* MidiMasherViewController.mm */; };
 		27DCF30B183C8645007D3E22 /* PGMidi.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27DCF306183C8645007D3E22 /* PGMidi.mm */; };
 		27DCF30C183C8645007D3E22 /* PGMidiAllSources.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27DCF308183C8645007D3E22 /* PGMidiAllSources.mm */; };
 		27DCF30D183C8645007D3E22 /* PGMidiFind.mm in Sources */ = {isa = PBXBuildFile; fileRef = 27DCF30A183C8645007D3E22 /* PGMidiFind.mm */; };
@@ -47,11 +47,9 @@
 		27897D0B1831E6F50070281C /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		27897D0D1831E6F50070281C /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		27897D0F1831E6F50070281C /* MidiMasher-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MidiMasher-Prefix.pch"; sourceTree = "<group>"; };
-		27897D101831E6F50070281C /* HelloWorldAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldAppDelegate.h; sourceTree = "<group>"; };
-		27897D111831E6F50070281C /* HelloWorldAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HelloWorldAppDelegate.m; sourceTree = "<group>"; };
+		27897D101831E6F50070281C /* MidiMasherAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MidiMasherAppDelegate.h; sourceTree = "<group>"; };
+		27897D111831E6F50070281C /* MidiMasherAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MidiMasherAppDelegate.m; sourceTree = "<group>"; };
 		27897D141831E6F50070281C /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		27897D161831E6F50070281C /* HelloWorldViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HelloWorldViewController.h; sourceTree = "<group>"; };
-		27897D171831E6F50070281C /* HelloWorldViewController.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; path = HelloWorldViewController.mm; sourceTree = "<group>"; };
 		27897D191831E6F50070281C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		27897D1F1831E6F50070281C /* MidiMasherTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MidiMasherTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		27897D201831E6F50070281C /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -62,6 +60,8 @@
 		278CBBE3183AAF0A0018FA65 /* NetworkMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = NetworkMidi.h; sourceTree = "<group>"; };
 		278CBBE4183AB4310018FA65 /* NetworkMidi.iOS.mm */ = {isa = PBXFileReference; explicitFileType = sourcecode.cpp.objcpp; fileEncoding = 4; path = NetworkMidi.iOS.mm; sourceTree = "<group>"; };
 		278CBBEA183B299A0018FA65 /* SoundDef.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SoundDef.h; sourceTree = "<group>"; };
+		27C25928189C6B8C001DE810 /* MidiMasherViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = MidiMasherViewController.mm; sourceTree = "<group>"; };
+		27C25929189C6B8C001DE810 /* MidiMasherViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MidiMasherViewController.h; sourceTree = "<group>"; };
 		27DCF303183C8645007D3E22 /* iOSVersionDetection.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = iOSVersionDetection.h; sourceTree = "<group>"; };
 		27DCF304183C8645007D3E22 /* PGArc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGArc.h; sourceTree = "<group>"; };
 		27DCF305183C8645007D3E22 /* PGMidi.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PGMidi.h; sourceTree = "<group>"; };
@@ -132,12 +132,12 @@
 		27897D071831E6F50070281C /* MidiMasher */ = {
 			isa = PBXGroup;
 			children = (
+				27C25929189C6B8C001DE810 /* MidiMasherViewController.h */,
+				27C25928189C6B8C001DE810 /* MidiMasherViewController.mm */,
 				27E4AE441883B0C50042EF8F /* iPad */,
-				27897D101831E6F50070281C /* HelloWorldAppDelegate.h */,
-				27897D111831E6F50070281C /* HelloWorldAppDelegate.m */,
+				27897D101831E6F50070281C /* MidiMasherAppDelegate.h */,
+				27897D111831E6F50070281C /* MidiMasherAppDelegate.m */,
 				27897D131831E6F50070281C /* Main.storyboard */,
-				27897D161831E6F50070281C /* HelloWorldViewController.h */,
-				27897D171831E6F50070281C /* HelloWorldViewController.mm */,
 				27897D191831E6F50070281C /* Images.xcassets */,
 				27897D081831E6F50070281C /* Supporting Files */,
 				278CBBE3183AAF0A0018FA65 /* NetworkMidi.h */,
@@ -304,11 +304,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				27897D121831E6F50070281C /* HelloWorldAppDelegate.m in Sources */,
-				27897D181831E6F50070281C /* HelloWorldViewController.mm in Sources */,
+				27897D121831E6F50070281C /* MidiMasherAppDelegate.m in Sources */,
 				27897D0E1831E6F50070281C /* main.m in Sources */,
 				27DCF30B183C8645007D3E22 /* PGMidi.mm in Sources */,
 				27DCF30D183C8645007D3E22 /* PGMidiFind.mm in Sources */,
+				27C2592A189C6B8C001DE810 /* MidiMasherViewController.mm in Sources */,
 				27DCF30C183C8645007D3E22 /* PGMidiAllSources.mm in Sources */,
 				278CBBE5183AB4310018FA65 /* NetworkMidi.iOS.mm in Sources */,
 			);

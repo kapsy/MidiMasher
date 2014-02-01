@@ -24,3 +24,10 @@ Pods
 
 # MidiMasher
 MidiMasher/SoundDef.h
+
+# Clang Complete
+.clang_complete
+
+# Vim
+.*.swp
+*.swp
