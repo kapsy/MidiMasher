@@ -1,5 +1,5 @@
 //
-//  HelloWorldViewController.h
+//  MidiMasherViewController.h
 //  MidiMasher
 //
 //  Created by Mike on 12/11/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldViewController : UIViewController {
+@interface MidiMasherViewController : UIViewController {
 }
 
 @property (weak, nonatomic) IBOutlet UIButton *outlet_test;
