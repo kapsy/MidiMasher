@@ -25,18 +25,24 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)midi_1:(id)sender {
-    
-    hd::sound::NetworkMidi::SendOneShot(61, 0.25F);
-    self.outlet_test.backgroundColor = [UIColor blueColor];
-
-    hd::sound::NetworkMidi::NetworkMidi::SendOneShot(68, 3.0F);
+- (IBAction)key_001_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(60);
+    self.key_01_C.backgroundColor = [UIColor blueColor];
 }
 
-- (IBAction)midi_2:(id)sender {
-    
-    hd::sound::NetworkMidi::SendOneShot(60, 0.25F);
-    self.outlet_test.backgroundColor = [UIColor yellowColor];
+- (IBAction)key_001_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(60);
+    self.key_01_C.backgroundColor = [UIColor yellowColor];
+}
+
+- (IBAction)key_002_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(61);
+    self.key_01_C.backgroundColor = [UIColor blueColor];
+}
+
+- (IBAction)key_002_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(61);
+    self.key_01_C.backgroundColor = [UIColor yellowColor];
 }
 
 
