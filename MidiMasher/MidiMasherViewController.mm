@@ -27,24 +27,33 @@
 
 - (IBAction)key_001_touchDown:(id)sender {
     hd::sound::NetworkMidi::SendNoteOn(60);
-    self.key_01_C.backgroundColor = [UIColor blueColor];
+    self.key_001.backgroundColor = [UIColor blueColor];
 }
 
 - (IBAction)key_001_touchUpInside:(id)sender {
     hd::sound::NetworkMidi::SendNoteOff(60);
-    self.key_01_C.backgroundColor = [UIColor yellowColor];
+    self.key_001.backgroundColor = [UIColor yellowColor];
+}
+
+- (IBAction)key_001_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(60);
+    self.key_001.backgroundColor = [UIColor yellowColor];
 }
 
 - (IBAction)key_002_touchDown:(id)sender {
     hd::sound::NetworkMidi::SendNoteOn(61);
-    self.key_01_C.backgroundColor = [UIColor blueColor];
+    self.key_002.backgroundColor = [UIColor blueColor];
 }
 
 - (IBAction)key_002_touchUpInside:(id)sender {
     hd::sound::NetworkMidi::SendNoteOff(61);
-    self.key_01_C.backgroundColor = [UIColor yellowColor];
+    self.key_002.backgroundColor = [UIColor yellowColor];
 }
 
+- (IBAction)key_002_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(61);
+    self.key_002.backgroundColor = [UIColor yellowColor];
+}
 
 
 
