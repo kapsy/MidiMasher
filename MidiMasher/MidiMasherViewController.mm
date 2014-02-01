@@ -25,20 +25,18 @@
 
     [self init_keys];
 
-    self.key_001.backgroundColor = self.white_off;//[self->keys objectAtIndex:0];
-    self.key_002.backgroundColor = self.black_off;//[self->keys objectAtIndex:1];
- 
-//    self.key_003.backgroundColor = self.white_off;
-//    self.key_004.backgroundColor = self.black_off;
-//    self.key_005.backgroundColor = self.white_off;
-//    self.key_006.backgroundColor = self.white_off;
-//    self.key_007.backgroundColor = self.black_off;
-//    self.key_008.backgroundColor = self.white_off;
-//    self.key_009.backgroundColor = self.black_off;
-//    self.key_010.backgroundColor = self.white_off;
-//    self.key_011.backgroundColor = self.black_off;
-//    self.key_012.backgroundColor = self.white_off;
-    
+    self.key_001.backgroundColor = [self->keys objectAtIndex:0];
+    self.key_002.backgroundColor = [self->keys objectAtIndex:2]; 
+    self.key_003.backgroundColor = [self->keys objectAtIndex:4]; 
+    self.key_004.backgroundColor = [self->keys objectAtIndex:6]; 
+    self.key_005.backgroundColor = [self->keys objectAtIndex:8]; 
+    self.key_006.backgroundColor = [self->keys objectAtIndex:10]; 
+    self.key_007.backgroundColor = [self->keys objectAtIndex:12]; 
+    self.key_008.backgroundColor = [self->keys objectAtIndex:14]; 
+    self.key_009.backgroundColor = [self->keys objectAtIndex:16]; 
+    self.key_010.backgroundColor = [self->keys objectAtIndex:18]; 
+    self.key_011.backgroundColor = [self->keys objectAtIndex:20]; 
+    self.key_012.backgroundColor = [self->keys objectAtIndex:22]; 
 }
 
 - (void)didReceiveMemoryWarning
@@ -65,37 +63,174 @@
         self.black_off, self.black_on,
         self.white_off, self.white_on, 
         nil];
-
 }
 
+// key_001
 - (IBAction)key_001_touchDown:(id)sender {
     hd::sound::NetworkMidi::SendNoteOn(60);
     self.key_001.backgroundColor = [self->keys objectAtIndex:1];
 }
-
 - (IBAction)key_001_touchUpInside:(id)sender {
     hd::sound::NetworkMidi::SendNoteOff(60);
     self.key_001.backgroundColor = [self->keys objectAtIndex:0]; //[self->keys objectAtIndex:0];
 }
-
 - (IBAction)key_001_touchUpOutside:(id)sender {
     hd::sound::NetworkMidi::SendNoteOff(60);
     self.key_001.backgroundColor = [self->keys objectAtIndex:0];
 }
 
+// key_002
 - (IBAction)key_002_touchDown:(id)sender {
     hd::sound::NetworkMidi::SendNoteOn(61);
     self.key_002.backgroundColor = [self->keys objectAtIndex:3];
 }
-
 - (IBAction)key_002_touchUpInside:(id)sender {
     hd::sound::NetworkMidi::SendNoteOff(61);
     self.key_002.backgroundColor = [self->keys objectAtIndex:2];
 }
-
 - (IBAction)key_002_touchUpOutside:(id)sender {
     hd::sound::NetworkMidi::SendNoteOff(61);
     self.key_002.backgroundColor = [self->keys objectAtIndex:2];
+}
+
+// key_003
+- (IBAction)key_003_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(62);
+    self.key_003.backgroundColor = [self->keys objectAtIndex:5];
+}
+- (IBAction)key_003_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(62);
+    self.key_003.backgroundColor = [self->keys objectAtIndex:4];
+}
+- (IBAction)key_003_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(62);
+    self.key_003.backgroundColor = [self->keys objectAtIndex:4];
+}
+
+// key_004
+- (IBAction)key_004_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(63);
+    self.key_004.backgroundColor = [self->keys objectAtIndex:7];
+}
+- (IBAction)key_004_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(63);
+    self.key_004.backgroundColor = [self->keys objectAtIndex:6];
+}
+- (IBAction)key_004_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(63);
+    self.key_004.backgroundColor = [self->keys objectAtIndex:6];
+}
+
+// key_005
+- (IBAction)key_005_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(64);
+    self.key_005.backgroundColor = [self->keys objectAtIndex:9];
+}
+- (IBAction)key_005_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(64);
+    self.key_005.backgroundColor = [self->keys objectAtIndex:8];
+}
+- (IBAction)key_005_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(64);
+    self.key_005.backgroundColor = [self->keys objectAtIndex:8];
+}
+
+// key_006
+- (IBAction)key_006_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(65);
+    self.key_006.backgroundColor = [self->keys objectAtIndex:11];
+}
+- (IBAction)key_006_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(65);
+    self.key_006.backgroundColor = [self->keys objectAtIndex:10];
+}
+- (IBAction)key_006_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(65);
+    self.key_006.backgroundColor = [self->keys objectAtIndex:10];
+}
+
+// key_007
+- (IBAction)key_007_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(66);
+    self.key_007.backgroundColor = [self->keys objectAtIndex:13];
+}
+- (IBAction)key_007_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(66);
+    self.key_007.backgroundColor = [self->keys objectAtIndex:12];
+}
+- (IBAction)key_007_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(66);
+    self.key_007.backgroundColor = [self->keys objectAtIndex:12];
+}
+
+// key_008
+- (IBAction)key_008_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(67);
+    self.key_008.backgroundColor = [self->keys objectAtIndex:15];
+}
+- (IBAction)key_008_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(67);
+    self.key_008.backgroundColor = [self->keys objectAtIndex:14];
+}
+- (IBAction)key_008_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(67);
+    self.key_008.backgroundColor = [self->keys objectAtIndex:14];
+}
+
+// key_009
+- (IBAction)key_009_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(68);
+    self.key_009.backgroundColor = [self->keys objectAtIndex:17];
+}
+- (IBAction)key_009_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(68);
+    self.key_009.backgroundColor = [self->keys objectAtIndex:16];
+}
+- (IBAction)key_009_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(68);
+    self.key_009.backgroundColor = [self->keys objectAtIndex:16];
+}
+
+// key_010
+- (IBAction)key_010_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(69);
+    self.key_010.backgroundColor = [self->keys objectAtIndex:19];
+}
+- (IBAction)key_010_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(69);
+    self.key_010.backgroundColor = [self->keys objectAtIndex:18];
+}
+- (IBAction)key_010_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(69);
+    self.key_010.backgroundColor = [self->keys objectAtIndex:18];
+}
+
+// key_011
+- (IBAction)key_011_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(70);
+    self.key_011.backgroundColor = [self->keys objectAtIndex:21];
+}
+- (IBAction)key_011_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(70);
+    self.key_011.backgroundColor = [self->keys objectAtIndex:20];
+}
+- (IBAction)key_011_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(70);
+    self.key_011.backgroundColor = [self->keys objectAtIndex:20];
+}
+
+// key_012
+- (IBAction)key_012_touchDown:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(71);
+    self.key_012.backgroundColor = [self->keys objectAtIndex:23];
+}
+- (IBAction)key_012_touchUpInside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(71);
+    self.key_012.backgroundColor = [self->keys objectAtIndex:22];
+}
+- (IBAction)key_012_touchUpOutside:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOff(71);
+    self.key_012.backgroundColor = [self->keys objectAtIndex:22];
 }
 
 @end
