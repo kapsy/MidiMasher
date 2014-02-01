@@ -1,18 +1,17 @@
 //
-//  HelloWorldViewController.m
-//  MidiMasher
+//  MidiMasherViewController.m
 //
 //  Created by Mike on 12/11/13.
 //  Copyright (c) 2013 Mike. All rights reserved.
 //
 
-#import "HelloWorldViewController.h"
+#import "MidiMasherViewController.h"
 
 #import "NetworkMidi.h"
 
 
 
-@implementation HelloWorldViewController
+@implementation MidiMasherViewController
 
 - (void)viewDidLoad
 {
