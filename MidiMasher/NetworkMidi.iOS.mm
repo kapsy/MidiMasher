@@ -44,6 +44,4 @@ void hd::sound::NetworkMidi::SendOneShot(unsigned int note, float time)
     dispatch_after(offTimer, dispatch_get_main_queue(), ^(void){
         SendNoteOff(note);
     });
-    
-    
 }
