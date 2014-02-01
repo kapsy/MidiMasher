@@ -20,14 +20,20 @@
                             <userLayoutGuide location="240" affinity="minY"/>
                         </userGuides>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="FPa-s9-ljh">
-                                <rect key="frame" x="20" y="110" width="72" height="190"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="FPa-s9-ljh">
+                                <rect key="frame" x="0.0" y="124" width="62" height="196"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" red="1" green="0.72050893319999998" blue="0.1213851043" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="C">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="C">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="VdB-pD-zQM"/>
@@ -35,14 +41,146 @@
                                     <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="zBZ-hK-ZJ0"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-I6-Xyv">
-                                <rect key="frame" x="67" y="95" width="60" height="145"/>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="xyc-AT-cD9">
+                                <rect key="frame" x="70" y="124" width="62" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="8cT-kz-BlJ"/>
+                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="FAn-m9-mb3"/>
+                                    <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="qDA-CS-Hib"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JxR-Bw-ap2">
+                                <rect key="frame" x="140" y="124" width="62" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="E">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="pCl-u6-Kyz"/>
+                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hlo-qz-6IN"/>
+                                    <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="vhG-ev-0zQ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="JWV-Tw-dYH">
+                                <rect key="frame" x="210" y="124" width="62" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="F">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="FuO-FJ-jDr"/>
+                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="E51-HX-J1h"/>
+                                    <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="Agt-bv-Gf1"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="aEW-fP-QXQ">
+                                <rect key="frame" x="280" y="124" width="62" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="G">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="Obn-3e-7eV"/>
+                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Gld-uK-Q2P"/>
+                                    <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="tUv-dD-jvt"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="16r-6W-HH7">
+                                <rect key="frame" x="350" y="124" width="62" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="A">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="lsp-Xg-w9T"/>
+                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="1yF-K2-1z4"/>
+                                    <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="gPK-z6-ATd"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" ambiguous="YES" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="iYm-j3-b7p">
+                                <rect key="frame" x="420" y="124" width="62" height="196"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="B">
+                                            <attributes>
+                                                <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="TQr-ix-7yf"/>
+                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KmB-TG-lnu"/>
+                                    <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="h0X-ep-XMh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-I6-Xyv">
+                                <rect key="frame" x="42" y="110" width="50" height="100"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
-                                <state key="normal" title="C#">
-                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
-                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="C#">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
                                 </state>
                                 <connections>
                                     <action selector="key_002_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="bkl-pg-bD3"/>
@@ -50,8 +188,100 @@
                                     <action selector="key_002_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="shu-z8-yn9"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Cge-8B-hZY">
+                                <rect key="frame" x="111" y="110" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="D#">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_002_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="Yiy-oD-Mgn"/>
+                                    <action selector="key_002_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="lNv-uz-wYa"/>
+                                    <action selector="key_002_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="Z05-Do-Ijy"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Z0u-H1-KA7">
+                                <rect key="frame" x="252" y="110" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="F#">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_002_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="Ycx-CI-Qru"/>
+                                    <action selector="key_002_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="dFw-PY-b9H"/>
+                                    <action selector="key_002_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="zWg-XB-cgf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="MsQ-iN-kTf">
+                                <rect key="frame" x="322" y="110" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="G#">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_002_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="4Fy-iX-3fa"/>
+                                    <action selector="key_002_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="yll-rn-n1m"/>
+                                    <action selector="key_002_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="6pu-tk-5oq"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="bottom" buttonType="roundedRect" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5NU-kZ-JgN">
+                                <rect key="frame" x="392" y="110" width="50" height="100"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                <inset key="contentEdgeInsets" minX="0.0" minY="0.0" maxX="0.0" maxY="20"/>
+                                <state key="normal">
+                                    <attributedString key="attributedTitle">
+                                        <fragment content="A#">
+                                            <attributes>
+                                                <color key="NSColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                                <font key="NSFont" size="15" name="HelveticaNeue-Bold"/>
+                                            </attributes>
+                                        </fragment>
+                                    </attributedString>
+                                </state>
+                                <connections>
+                                    <action selector="key_002_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="7iA-Es-zM9"/>
+                                    <action selector="key_002_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="84m-sU-EZ9"/>
+                                    <action selector="key_002_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="WnD-Yd-pac"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="iYm-j3-b7p" firstAttribute="bottom" secondItem="FPa-s9-ljh" secondAttribute="bottom" id="77g-HJ-T9Y"/>
+                            <constraint firstItem="iYm-j3-b7p" firstAttribute="bottom" secondItem="JWV-Tw-dYH" secondAttribute="bottom" id="CGb-vl-ktf"/>
+                            <constraint firstItem="iYm-j3-b7p" firstAttribute="bottom" secondItem="16r-6W-HH7" secondAttribute="bottom" id="Dk8-Tn-gXK"/>
+                            <constraint firstItem="iYm-j3-b7p" firstAttribute="bottom" secondItem="aEW-fP-QXQ" secondAttribute="bottom" id="FuM-m5-ELW"/>
+                            <constraint firstItem="iYm-j3-b7p" firstAttribute="bottom" secondItem="JxR-Bw-ap2" secondAttribute="bottom" id="dxq-De-7oB"/>
+                            <constraint firstItem="iYm-j3-b7p" firstAttribute="bottom" secondItem="xyc-AT-cD9" secondAttribute="bottom" id="uWI-hd-Ul6"/>
+                        </constraints>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
