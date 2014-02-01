@@ -30,6 +30,8 @@
     
     hd::sound::NetworkMidi::SendOneShot(61, 0.25F);
     self.outlet_test.backgroundColor = [UIColor blueColor];
+
+    hd::sound::NetworkMidi::NetworkMidi::SendOneShot(68, 3.0F);
 }
 
 - (IBAction)midi_2:(id)sender {
