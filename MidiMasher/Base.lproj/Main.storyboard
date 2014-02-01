@@ -30,12 +30,13 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cad-Tw-apd"/>
                                     <action selector="key_001_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="VdB-pD-zQM"/>
+                                    <action selector="key_001_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="cad-Tw-apd"/>
+                                    <action selector="key_001_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="zBZ-hK-ZJ0"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bNU-I6-Xyv">
-                                <rect key="frame" x="64" y="110" width="72" height="145"/>
+                                <rect key="frame" x="64" y="110" width="175" height="145"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -44,8 +45,9 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="key_002_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="btD-0d-fUt"/>
                                     <action selector="key_002_touchDown:" destination="vXZ-lx-hvc" eventType="touchDown" id="bkl-pg-bD3"/>
+                                    <action selector="key_002_touchUpInside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="btD-0d-fUt"/>
+                                    <action selector="key_002_touchUpOutside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="shu-z8-yn9"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -54,7 +56,8 @@
                     </view>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
-                        <outlet property="key_01_C" destination="FPa-s9-ljh" id="zgy-oB-bqL"/>
+                        <outlet property="key_001" destination="FPa-s9-ljh" id="zgy-oB-bqL"/>
+                        <outlet property="key_002" destination="bNU-I6-Xyv" id="QOc-R1-d14"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
