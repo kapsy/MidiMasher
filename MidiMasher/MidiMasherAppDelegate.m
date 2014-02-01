@@ -1,14 +1,14 @@
 //
-//  HelloWorldAppDelegate.m
+//  MidiMasherAppDelegate.m
 //  MidiMasher
 //
 //  Created by Mike on 12/11/13.
 //  Copyright (c) 2013 Mike. All rights reserved.
 //
 
-#import "HelloWorldAppDelegate.h"
+#import "MidiMasherAppDelegate.h"
 
-@implementation HelloWorldAppDelegate
+@implementation MidiMasherAppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {

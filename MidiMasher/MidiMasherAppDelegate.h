@@ -1,5 +1,5 @@
 //
-//  HelloWorldAppDelegate.h
+//  MidiMasherAppDelegate.h
 //  MidiMasher
 //
 //  Created by Mike on 12/11/13.
@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface HelloWorldAppDelegate : UIResponder <UIApplicationDelegate>
+@interface MidiMasherAppDelegate : UIResponder <UIApplicationDelegate>
 
 @property (strong, nonatomic) UIWindow *window;
 
