@@ -49,3 +49,17 @@ void hd::sound::NetworkMidi::SendOneShot(unsigned int note, float time)
         SendNoteOff(note);
     });
 }
+
+void hd::sound::NetworkMidi::SetPitchBendRange(unsigned int rng) {
+
+    NSLog(@"SetPitchBendRange");
+    const UInt8 pitchRng[] = { 0xB0, 101, 0, 0xB0, 100, 0, 0xB0, 6, 24};
+    [midi sendBytes:pitchRng size:sizeof(pitchRng)];
+}
+
+void hd::sound::NetworkMidi::SendPitchMsg(int val) {
+    NSLog(@"SendPitchMessage");
+    // const UInt8 pitchMsg[] = { 0xE0, 0x7F, 0x7F};
+    const UInt8 pitchMsg[] = { 0xE0, 0x00, 0x00};
+    [midi sendBytes:pitchMsg size:sizeof(pitchMsg)];
+}

@@ -25,6 +25,10 @@ namespace hd
             
             static void SendOneShot(unsigned int note, float time);
 
+            static void SetPitchBendRange(unsigned int rng);
+
+            static void SendPitchMsg(int val);
+
         };
     }
 }
