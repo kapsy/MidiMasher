@@ -14,6 +14,7 @@
 static PGMidi * midi = nil;
 
 void hd::sound::NetworkMidi::InitNetworkMidi(){
+    NSLog(@"NetworkMidi::InitNetworkMidi called");
     midi = [[PGMidi alloc] init];
 }
 
