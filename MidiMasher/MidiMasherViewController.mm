@@ -70,6 +70,10 @@
     hd::sound::NetworkMidi::SendNoteOn(60);
     self.key_001.backgroundColor = [self->keys objectAtIndex:1];
 }
+- (IBAction)key_001_touchDragEnter:(id)sender {
+    hd::sound::NetworkMidi::SendNoteOn(60);
+    self.key_001.backgroundColor = [self->keys objectAtIndex:1];
+}
 - (IBAction)key_001_touchUpInside:(id)sender {
     hd::sound::NetworkMidi::SendNoteOff(60);
     self.key_001.backgroundColor = [self->keys objectAtIndex:0]; //[self->keys objectAtIndex:0];

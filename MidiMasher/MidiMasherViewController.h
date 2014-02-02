@@ -39,6 +39,7 @@
 @property (weak, nonatomic) IBOutlet UIButton *key_012;
 
 - (IBAction)key_001_touchDown:(id)sender;
+- (IBAction)key_001_touchDragEnter:(id)sender;
 - (IBAction)key_001_touchUpInside:(id)sender;
 - (IBAction)key_001_touchUpOutside:(id)sender;
 
