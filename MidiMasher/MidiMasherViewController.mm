@@ -87,155 +87,155 @@
 
 // key_002
 - (IBAction)key_002_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(61);
+    hd::sound::NetworkMidi::SendNoteOn(61 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_002.backgroundColor = [self->keys objectAtIndex:3];
 }
 - (IBAction)key_002_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(61);
+    hd::sound::NetworkMidi::SendNoteOff(61 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_002.backgroundColor = [self->keys objectAtIndex:2];
 }
 - (IBAction)key_002_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(61);
+    hd::sound::NetworkMidi::SendNoteOff(61 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_002.backgroundColor = [self->keys objectAtIndex:2];
 }
 
 // key_003
 - (IBAction)key_003_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(62);
+    hd::sound::NetworkMidi::SendNoteOn(62 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_003.backgroundColor = [self->keys objectAtIndex:5];
 }
 - (IBAction)key_003_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(62);
+    hd::sound::NetworkMidi::SendNoteOff(62 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_003.backgroundColor = [self->keys objectAtIndex:4];
 }
 - (IBAction)key_003_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(62);
+    hd::sound::NetworkMidi::SendNoteOff(62 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_003.backgroundColor = [self->keys objectAtIndex:4];
 }
 
 // key_004
 - (IBAction)key_004_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(63);
+    hd::sound::NetworkMidi::SendNoteOn(63 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_004.backgroundColor = [self->keys objectAtIndex:7];
 }
 - (IBAction)key_004_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(63);
+    hd::sound::NetworkMidi::SendNoteOff(63 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_004.backgroundColor = [self->keys objectAtIndex:6];
 }
 - (IBAction)key_004_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(63);
+    hd::sound::NetworkMidi::SendNoteOff(63 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_004.backgroundColor = [self->keys objectAtIndex:6];
 }
 
 // key_005
 - (IBAction)key_005_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(64);
+    hd::sound::NetworkMidi::SendNoteOn(64 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_005.backgroundColor = [self->keys objectAtIndex:9];
 }
 - (IBAction)key_005_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(64);
+    hd::sound::NetworkMidi::SendNoteOff(64 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_005.backgroundColor = [self->keys objectAtIndex:8];
 }
 - (IBAction)key_005_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(64);
+    hd::sound::NetworkMidi::SendNoteOff(64 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_005.backgroundColor = [self->keys objectAtIndex:8];
 }
 
 // key_006
 - (IBAction)key_006_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(65);
+    hd::sound::NetworkMidi::SendNoteOn(65 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_006.backgroundColor = [self->keys objectAtIndex:11];
 }
 - (IBAction)key_006_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(65);
+    hd::sound::NetworkMidi::SendNoteOff(65 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_006.backgroundColor = [self->keys objectAtIndex:10];
 }
 - (IBAction)key_006_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(65);
+    hd::sound::NetworkMidi::SendNoteOff(65 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_006.backgroundColor = [self->keys objectAtIndex:10];
 }
 
 // key_007
 - (IBAction)key_007_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(66);
+    hd::sound::NetworkMidi::SendNoteOn(66 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_007.backgroundColor = [self->keys objectAtIndex:13];
 }
 - (IBAction)key_007_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(66);
+    hd::sound::NetworkMidi::SendNoteOff(66 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_007.backgroundColor = [self->keys objectAtIndex:12];
 }
 - (IBAction)key_007_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(66);
+    hd::sound::NetworkMidi::SendNoteOff(66 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_007.backgroundColor = [self->keys objectAtIndex:12];
 }
 
 // key_008
 - (IBAction)key_008_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(67);
+    hd::sound::NetworkMidi::SendNoteOn(67 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_008.backgroundColor = [self->keys objectAtIndex:15];
 }
 - (IBAction)key_008_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(67);
+    hd::sound::NetworkMidi::SendNoteOff(67 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_008.backgroundColor = [self->keys objectAtIndex:14];
 }
 - (IBAction)key_008_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(67);
+    hd::sound::NetworkMidi::SendNoteOff(67 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_008.backgroundColor = [self->keys objectAtIndex:14];
 }
 
 // key_009
 - (IBAction)key_009_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(68);
+    hd::sound::NetworkMidi::SendNoteOn(68 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_009.backgroundColor = [self->keys objectAtIndex:17];
 }
 - (IBAction)key_009_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(68);
+    hd::sound::NetworkMidi::SendNoteOff(68 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_009.backgroundColor = [self->keys objectAtIndex:16];
 }
 - (IBAction)key_009_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(68);
+    hd::sound::NetworkMidi::SendNoteOff(68 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_009.backgroundColor = [self->keys objectAtIndex:16];
 }
 
 // key_010
 - (IBAction)key_010_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(69);
+    hd::sound::NetworkMidi::SendNoteOn(69 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_010.backgroundColor = [self->keys objectAtIndex:19];
 }
 - (IBAction)key_010_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(69);
+    hd::sound::NetworkMidi::SendNoteOff(69 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_010.backgroundColor = [self->keys objectAtIndex:18];
 }
 - (IBAction)key_010_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(69);
+    hd::sound::NetworkMidi::SendNoteOff(69 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_010.backgroundColor = [self->keys objectAtIndex:18];
 }
 
 // key_011
 - (IBAction)key_011_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(70);
+    hd::sound::NetworkMidi::SendNoteOn(70 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_011.backgroundColor = [self->keys objectAtIndex:21];
 }
 - (IBAction)key_011_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(70);
+    hd::sound::NetworkMidi::SendNoteOff(70 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_011.backgroundColor = [self->keys objectAtIndex:20];
 }
 - (IBAction)key_011_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(70);
+    hd::sound::NetworkMidi::SendNoteOff(70 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_011.backgroundColor = [self->keys objectAtIndex:20];
 }
 
 // key_012
 - (IBAction)key_012_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(71);
+    hd::sound::NetworkMidi::SendNoteOn(71 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_012.backgroundColor = [self->keys objectAtIndex:23];
 }
 - (IBAction)key_012_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(71);
+    hd::sound::NetworkMidi::SendNoteOff(71 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_012.backgroundColor = [self->keys objectAtIndex:22];
 }
 - (IBAction)key_012_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(71);
+    hd::sound::NetworkMidi::SendNoteOff(71 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_012.backgroundColor = [self->keys objectAtIndex:22];
 }
 
