@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271F5797189DF2DC007A1851 /* AboutViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 271F5794189DF2DC007A1851 /* AboutViewController.mm */; };
+		271F5798189DF2DC007A1851 /* SettingsViewController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 271F5796189DF2DC007A1851 /* SettingsViewController.mm */; };
+		271F579E189E0294007A1851 /* TabBarController.mm in Sources */ = {isa = PBXBuildFile; fileRef = 271F579D189E0294007A1851 /* TabBarController.mm */; };
 		27897D021831E6F50070281C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D011831E6F50070281C /* Foundation.framework */; };
 		27897D041831E6F50070281C /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D031831E6F50070281C /* CoreGraphics.framework */; };
 		27897D061831E6F50070281C /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 27897D051831E6F50070281C /* UIKit.framework */; };
@@ -39,6 +42,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271F5793189DF2DC007A1851 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
+		271F5794189DF2DC007A1851 /* AboutViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = AboutViewController.mm; sourceTree = "<group>"; };
+		271F5795189DF2DC007A1851 /* SettingsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SettingsViewController.h; sourceTree = "<group>"; };
+		271F5796189DF2DC007A1851 /* SettingsViewController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = SettingsViewController.mm; sourceTree = "<group>"; };
+		271F579C189E0294007A1851 /* TabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TabBarController.h; sourceTree = "<group>"; };
+		271F579D189E0294007A1851 /* TabBarController.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = TabBarController.mm; sourceTree = "<group>"; };
 		27897CFE1831E6F50070281C /* MidiMasher.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MidiMasher.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		27897D011831E6F50070281C /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		27897D031831E6F50070281C /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +141,12 @@
 		27897D071831E6F50070281C /* MidiMasher */ = {
 			isa = PBXGroup;
 			children = (
+				271F579C189E0294007A1851 /* TabBarController.h */,
+				271F579D189E0294007A1851 /* TabBarController.mm */,
+				271F5793189DF2DC007A1851 /* AboutViewController.h */,
+				271F5794189DF2DC007A1851 /* AboutViewController.mm */,
+				271F5795189DF2DC007A1851 /* SettingsViewController.h */,
+				271F5796189DF2DC007A1851 /* SettingsViewController.mm */,
 				27C25929189C6B8C001DE810 /* MidiMasherViewController.h */,
 				27C25928189C6B8C001DE810 /* MidiMasherViewController.mm */,
 				27E4AE441883B0C50042EF8F /* iPad */,
@@ -304,10 +319,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271F5797189DF2DC007A1851 /* AboutViewController.mm in Sources */,
 				27897D121831E6F50070281C /* MidiMasherAppDelegate.m in Sources */,
+				271F579E189E0294007A1851 /* TabBarController.mm in Sources */,
 				27897D0E1831E6F50070281C /* main.m in Sources */,
 				27DCF30B183C8645007D3E22 /* PGMidi.mm in Sources */,
 				27DCF30D183C8645007D3E22 /* PGMidiFind.mm in Sources */,
+				271F5798189DF2DC007A1851 /* SettingsViewController.mm in Sources */,
 				27C2592A189C6B8C001DE810 /* MidiMasherViewController.mm in Sources */,
 				27DCF30C183C8645007D3E22 /* PGMidiAllSources.mm in Sources */,
 				278CBBE5183AB4310018FA65 /* NetworkMidi.iOS.mm in Sources */,
