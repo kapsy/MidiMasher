@@ -27,4 +27,9 @@
     NSLog(@"Reset_Midi_Wifi_Touch_Down");
     hd::sound::NetworkMidi::InitNetworkMidi();
 }
+
+- (IBAction)Set_Bend_Max_Touch_Down:(id)sender {
+    NSLog(@"Set_Bend_Max_Touch_Down");
+    hd::sound::NetworkMidi::SetPitchBendRange(24);
+}
 @end
