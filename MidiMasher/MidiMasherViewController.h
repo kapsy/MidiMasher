@@ -18,6 +18,8 @@
 
 @property (weak, nonatomic) IBOutlet UISlider *pitch_slider_001;
 - (IBAction)pitch_slider_Value_Changed:(id)sender;
+- (IBAction)pitch_slider_Touch_Up_Inside:(id)sender;
+- (IBAction)pitch_slider_Touch_Up_Outside:(id)sender;
 
 @property (weak, nonatomic) IBOutlet UISegmentedControl *octave_selector_001;
 - (IBAction)octave_selector_Value_Changed:(id)sender;

@@ -244,6 +244,16 @@
     hd::sound::NetworkMidi::SendPitchMsg(8000);
 }
 
+// Resets the pitch slider to the middle when released
+- (IBAction)pitch_slider_Touch_Up_Inside:(id)sender {
+    NSLog(@"pitch_slider_Touch_Up_Inside");
+    self.pitch_slider_001.value = 8191.0F;
+}
+- (IBAction)pitch_slider_Touch_Up_Outside:(id)sender {
+    NSLog(@"pitch_slider_Touch_Up_Outside");
+    self.pitch_slider_001.value = 8191.0F;
+}
+
 - (IBAction)octave_selector_Value_Changed:(id)sender {
     NSLog(@"octave_selector_Value_Changed: %d", self.octave_selector_001.selectedSegmentIndex);
     self.current_octave = self.octave_selector_001.selectedSegmentIndex;
