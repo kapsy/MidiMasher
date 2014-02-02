@@ -45,6 +45,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)octave_selector_Value_Changed:(id)sender {
+}
+
 - (void)init_keys {
     NSLog(@"init_keys called.");
 
@@ -237,4 +240,6 @@
     self.key_012.backgroundColor = [self->keys objectAtIndex:22];
 }
 
+- (IBAction)pitch_slider_Value_Changed:(id)sender {
+}
 @end
