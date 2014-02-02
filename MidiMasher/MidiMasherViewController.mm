@@ -6,10 +6,7 @@
 //
 
 #import "MidiMasherViewController.h"
-
 #import "NetworkMidi.h"
-
-
 
 @implementation MidiMasherViewController
 
@@ -18,6 +15,11 @@
     [super viewDidLoad];
     hd::sound::NetworkMidi::InitNetworkMidi();
     hd::sound::NetworkMidi::SetPitchBendRange(24);
+
+    self.octaves = [NSArray arrayWithObjects: @-24, @-12, @0, @12, @24, nil];
+    NSLog(@"octave_selector current value: %d", self.octave_selector_001.selectedSegmentIndex);
+
+    self.current_octave = self.octave_selector_001.selectedSegmentIndex;
     self.white_off = [UIColor whiteColor];
     self.white_on = [UIColor grayColor];
     self.black_off = [UIColor darkGrayColor];
@@ -67,19 +69,19 @@
 
 // key_001
 - (IBAction)key_001_touchDown:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(60);
+    hd::sound::NetworkMidi::SendNoteOn(60 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_001.backgroundColor = [self->keys objectAtIndex:1];
 }
 - (IBAction)key_001_touchDragEnter:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOn(60);
+    hd::sound::NetworkMidi::SendNoteOn(60 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_001.backgroundColor = [self->keys objectAtIndex:1];
 }
 - (IBAction)key_001_touchUpInside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(60);
+    hd::sound::NetworkMidi::SendNoteOff(60 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_001.backgroundColor = [self->keys objectAtIndex:0]; //[self->keys objectAtIndex:0];
 }
 - (IBAction)key_001_touchUpOutside:(id)sender {
-    hd::sound::NetworkMidi::SendNoteOff(60);
+    hd::sound::NetworkMidi::SendNoteOff(60 + [[self.octaves objectAtIndex:self.current_octave] integerValue]);
     self.key_001.backgroundColor = [self->keys objectAtIndex:0];
 }
 
@@ -244,6 +246,7 @@
 
 - (IBAction)octave_selector_Value_Changed:(id)sender {
     NSLog(@"octave_selector_Value_Changed: %d", self.octave_selector_001.selectedSegmentIndex);
+    self.current_octave = self.octave_selector_001.selectedSegmentIndex;
 }
 
 @end
