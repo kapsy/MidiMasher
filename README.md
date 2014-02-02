@@ -1,3 +1,3 @@
 # Midi Masher 0.1
 
-Proof of concept for MIDI over Wi-Fi debug functionality.
+Developed as a proof of concept, Midi Masher is a remote keyboard controller that send MIDI information over WiFi.  
