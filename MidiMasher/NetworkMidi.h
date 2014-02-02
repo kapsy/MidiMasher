@@ -29,6 +29,9 @@ namespace hd
 
             static void SendPitchMsg(int val);
 
+            static unsigned char GetPitchBendMSB(int val);
+
+            static unsigned char GetPitchBendLSB(int val);
         };
     }
 }
