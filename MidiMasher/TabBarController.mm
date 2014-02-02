@@ -14,7 +14,14 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    NSLog(@"TabBarController: viewWillAppear called");
     // Fix the frame of the UIViewControllerWrapperView
+    self.selectedViewController.view.superview.frame = self.view.bounds;
+}
+
+- (void)viewDidLayoutSubviews {
+    NSLog(@"TabBarController: viewDidLayoutSubviews");
+    // fix for iOS7 bug in UITabBarController
     self.selectedViewController.view.superview.frame = self.view.bounds;
 }
 
