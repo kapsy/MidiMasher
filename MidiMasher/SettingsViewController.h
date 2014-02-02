@@ -10,5 +10,8 @@
 
 @interface SettingsViewController : UIViewController {
 }
+@property (weak, nonatomic) IBOutlet UIButton *Reset_Midi_Wifi_Button;
+
+- (IBAction)Reset_Midi_Wifi_Touch_Down:(id)sender;
 
 @end

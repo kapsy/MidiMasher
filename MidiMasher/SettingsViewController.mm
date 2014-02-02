@@ -8,6 +8,7 @@
 
 #import "SettingsViewController.h"
 
+#import "NetworkMidi.h"
 
 @implementation SettingsViewController
 
@@ -22,4 +23,8 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)Reset_Midi_Wifi_Touch_Down:(id)sender {
+    NSLog(@"Reset_Midi_Wifi_Touch_Down");
+    hd::sound::NetworkMidi::InitNetworkMidi();
+}
 @end
