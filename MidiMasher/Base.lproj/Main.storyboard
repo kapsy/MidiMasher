@@ -394,10 +394,12 @@
                                     <action selector="octave_selector_Value_Changed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="Yl1-0n-vh2"/>
                                 </connections>
                             </segmentedControl>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" translatesAutoresizingMaskIntoConstraints="NO" id="BEW-oZ-22e">
+                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="8191" minValue="0.0" maxValue="16383" translatesAutoresizingMaskIntoConstraints="NO" id="BEW-oZ-22e">
                                 <rect key="frame" x="57" y="20" width="405" height="34"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <connections>
+                                    <action selector="pitch_slider_Touch_Up_Inside:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="gkp-Dr-y33"/>
+                                    <action selector="pitch_slider_Touch_Up_Outside:" destination="vXZ-lx-hvc" eventType="touchUpOutside" id="AS2-7j-EUD"/>
                                     <action selector="pitch_slider_Value_Changed:" destination="vXZ-lx-hvc" eventType="valueChanged" id="3Pm-eb-hLC"/>
                                 </connections>
                             </slider>
