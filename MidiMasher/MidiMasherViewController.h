@@ -9,10 +9,6 @@
 #import <UIKit/UIKit.h>
 
 @interface MidiMasherViewController : UIViewController {
-//     UIColor* white;
-//     UIColor* gray;
-//     UIColor* pressed;
-//
     NSArray* nums;
     NSArray* keys;
 

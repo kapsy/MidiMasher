@@ -17,7 +17,7 @@
 {
     [super viewDidLoad];
     hd::sound::NetworkMidi::InitNetworkMidi();
-
+    hd::sound::NetworkMidi::SetPitchBendRange(24);
     self.white_off = [UIColor whiteColor];
     self.white_on = [UIColor grayColor];
     self.black_off = [UIColor darkGrayColor];
@@ -43,9 +43,6 @@
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
-}
-
-- (IBAction)octave_selector_Value_Changed:(id)sender {
 }
 
 - (void)init_keys {
@@ -241,5 +238,12 @@
 }
 
 - (IBAction)pitch_slider_Value_Changed:(id)sender {
+    NSLog(@"pitch_slider_Value_Changed: %f", self.pitch_slider_001.value);
+    hd::sound::NetworkMidi::SendPitchMsg(8000);
 }
+
+- (IBAction)octave_selector_Value_Changed:(id)sender {
+    NSLog(@"octave_selector_Value_Changed: %d", self.octave_selector_001.selectedSegmentIndex);
+}
+
 @end
