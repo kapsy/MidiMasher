@@ -239,19 +239,21 @@
     self.key_012.backgroundColor = [self->keys objectAtIndex:22];
 }
 
+// pitch slider event handling.
 - (IBAction)pitch_slider_Value_Changed:(id)sender {
-    NSLog(@"pitch_slider_Value_Changed: %f", self.pitch_slider_001.value);
-    hd::sound::NetworkMidi::SendPitchMsg(8000);
+    NSLog(@"pitch_slider_Value_Changed: %d", (int)self.pitch_slider_001.value);
+    hd::sound::NetworkMidi::SendPitchMsg((int)self.pitch_slider_001.value);
 }
-
 // Resets the pitch slider to the middle when released
 - (IBAction)pitch_slider_Touch_Up_Inside:(id)sender {
     NSLog(@"pitch_slider_Touch_Up_Inside");
     self.pitch_slider_001.value = 8191.0F;
+    hd::sound::NetworkMidi::SendPitchMsg(8191); //TODO: define constant for 0 pitch
 }
 - (IBAction)pitch_slider_Touch_Up_Outside:(id)sender {
     NSLog(@"pitch_slider_Touch_Up_Outside");
     self.pitch_slider_001.value = 8191.0F;
+    hd::sound::NetworkMidi::SendPitchMsg(8191);
 }
 
 - (IBAction)octave_selector_Value_Changed:(id)sender {
